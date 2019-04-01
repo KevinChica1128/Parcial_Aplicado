@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6960 64-bit) (preloaded format=pdflatex 2019.2.2)  1 APR 2019 00:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6960 64-bit) (preloaded format=pdflatex 2019.2.2)  1 APR 2019 18:15
 entering extended mode
 **"./Parcial aplicado.tex"
 ("Parcial aplicado.tex"
@@ -323,7 +323,10 @@ Package: inputenc 2018/08/11 v1.3c Input encoding file
 ("C:\Program Files\MiKTeX 2.9\tex/latex/base\latin1.def"
 File: latin1.def 2018/08/11 v1.3c Input encoding file
 ))
-No file "Parcial aplicado".aux.
+("Parcial aplicado.aux"
+LaTeX Info: Redefining \. on input line 6.
+LaTeX Info: Redefining \% on input line 6.
+)
 \openout1 = `"Parcial aplicado.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 41.
@@ -561,42 +564,101 @@ Overfull \hbox (57.81337pt too wide) in paragraph at lines 262--263
  []
 
 [8 <./FigurasUV/numclus.pdf> <./FigurasUV/plotclus.pdf>] [9]
-("Parcial aplicado.aux"
+<FigurasUV/Base.png, id=102, 1371.1225pt x 770.88pt>
+File: FigurasUV/Base.png Graphic file (type png)
+<use FigurasUV/Base.png>
+Package pdftex.def Info: FigurasUV/Base.png  used on input line 277.
+(pdftex.def)             Requested size: 479.90007pt x 269.81204pt.
+
+Overfull \hbox (49.89545pt too wide) in paragraph at lines 277--278
+ [][] 
+ []
+
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 281.
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/base\t1cmtt.fd"
+File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+Overfull \hbox (42.38002pt too wide) in paragraph at lines 285--285
+[]\T1/cmtt/m/n/10 datos=read.table (file = "clipboard", header = TRUE, row.name
+s = 1, sep = "\t", dec = ".")[] 
+ []
+
+[10 <./FigurasUV/Base.png>]
+Overfull \hbox (126.35951pt too wide) in paragraph at lines 350--350
+[]\T1/cmtt/m/n/10 for (i in 1:4) barplot(mod.mca$cr[, i], names.arg = row.names
+(mod.mca$cr), las = 2, main = paste("Axe",i))[] 
+ []
+
+[11]
+Overfull \hbox (189.34413pt too wide) in paragraph at lines 376--376
+[]\T1/cmtt/m/n/10 for (i in 1:2) barplot(acm2$var$contrib[, i], names.arg = row
+.names(acm2$var$contrib), las = 2, main = paste("Dim",i))[] 
+ []
+
+
+Overfull \hbox (252.32875pt too wide) in paragraph at lines 377--377
+[]\T1/cmtt/m/n/10 for (i in 1:2) barplot(na.omit(acm2$var$cos2)[, i], names.arg
+ = row.names(na.omit(acm2$var$cos2)), las = 2, main = paste("Dim",i))[] 
+ []
+
+
+Overfull \hbox (252.32875pt too wide) in paragraph at lines 382--382
+[]\T1/cmtt/m/n/10 for (i in 1:2) barplot(na.omit(acm2$var$cos2)[, i], names.arg
+ = row.names(na.omit(acm2$var$cos2)), las = 2, main = paste("Dim",i))[] 
+ []
+
+
+Overfull \hbox (189.34413pt too wide) in paragraph at lines 390--390
+[]\T1/cmtt/m/n/10 for (i in 1:2) barplot(acm2$ind$contrib[, i], names.arg = row
+.names(acm2$ind$contrib), las = 2, main = paste("Dim",i))[] 
+ []
+
+
+Overfull \hbox (252.32875pt too wide) in paragraph at lines 391--391
+[]\T1/cmtt/m/n/10 for (i in 1:2) barplot(na.omit(acm2$ind$cos2)[, i], names.arg
+ = row.names(na.omit(acm2$ind$cos2)), las = 2, main = paste("Dim",i))[] 
+ []
+
+[12]
+Overfull \hbox (16.13643pt too wide) in paragraph at lines 450--450
+[]\T1/cmtt/m/n/10 plotFactoClass(cluster1,cframe=1,col.row=c("red","green","mar
+oon2","orchid4","pink"))[] 
+ []
+
+[13] ("Parcial aplicado.aux"
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
-)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+) ) 
 Here is how much of TeX's memory you used:
- 5950 strings out of 492946
- 84363 string characters out of 3135510
- 170898 words of memory out of 3000000
- 9709 multiletter control sequences out of 15000+200000
- 18900 words of font info for 57 fonts, out of 3000000 for 9000
+ 5976 strings out of 492946
+ 85156 string characters out of 3135510
+ 170917 words of memory out of 3000000
+ 9727 multiletter control sequences out of 15000+200000
+ 19213 words of font info for 58 fonts, out of 3000000 for 9000
  1145 hyphenation exceptions out of 8191
  43i,8n,40p,1073b,359s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\KEVINSTEVEN\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/d
-pi600\ecti0900.pk> <C:\Users\KEVINSTEVEN\AppData\Local\MiKTeX\2.9\fonts/pk/ljfo
-ur/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\KEVINSTEVEN\AppData\Local\MiKTeX\2
-.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0600.pk> <C:\Users\KEVINSTEVEN\AppDat
-a\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\KE
-VINSTEVEN\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0700.
-pk> <C:\Users\KEVINSTEVEN\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/
-dpi600\eccc1000.pk> <C:\Users\KEVINSTEVEN\AppData\Local\MiKTeX\2.9\fonts/pk/ljf
-our/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\KEVINSTEVEN\AppData\Local\MiKTeX\
-2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0900.pk> <C:\Users\KEVINSTEVEN\AppDa
-ta\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx0900.pk><C:/Program 
-Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9
-/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
-pe1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
-c/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
-/cm/cmsy10.pfb>
-Output written on "Parcial aplicado.pdf" (9 pages, 1913620 bytes).
+ <C:\Users\KEVINSTEVEN\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/
+dpi600\ectt1000.pk> <C:\Users\KEVINSTEVEN\AppData\Local\MiKTeX\2.9\fonts/pk/ljf
+our/jknappen/ec/dpi600\ecti0900.pk> <C:\Users\KEVINSTEVEN\AppData\Local\MiKTeX\
+2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\KEVINSTEVEN\AppDa
+ta\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0600.pk> <C:\Users\K
+EVINSTEVEN\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000
+.pk> <C:\Users\KEVINSTEVEN\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec
+/dpi600\ecrm0700.pk> <C:\Users\KEVINSTEVEN\AppData\Local\MiKTeX\2.9\fonts/pk/lj
+four/jknappen/ec/dpi600\eccc1000.pk> <C:\Users\KEVINSTEVEN\AppData\Local\MiKTeX
+\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\KEVINSTEVEN\AppD
+ata\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0900.pk> <C:\Users\
+KEVINSTEVEN\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx090
+0.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:
+/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program
+ Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/
+fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
+1/public/amsfonts/cm/cmsy10.pfb>
+Output written on "Parcial aplicado.pdf" (13 pages, 1984141 bytes).
 PDF statistics:
- 390 PDF objects out of 1000 (max. 8388607)
+ 489 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 56 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 61 words of extra memory for PDF output out of 10000 (max. 10000000)
 

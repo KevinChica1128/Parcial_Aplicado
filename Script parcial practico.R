@@ -1,5 +1,5 @@
-#Parcial Aplicado
-#Kevin GarcÃ­a - 1533173
+#Parcial Aplicado ACM
+#Kevin García - 1533173
 #Alejandro Vargas - 1525953
 datos=read.table (file = "clipboard", header = TRUE, row.names = 1, sep = "\t", dec = ".")
 View(datos)
@@ -111,7 +111,7 @@ par(mfrow = c(3,2 ))
 for (i in 1:2) barplot(na.omit(acm2$var$cos2)[, i], names.arg = row.names(na.omit(acm2$var$cos2)), las = 2, main = paste("Dim",i))
 
 
-#Contribuciones y concenos para los individuos
+#Contribuciones y cosenos para los individuos
 acm2$ind$contrib
 acm2$ind$cos2
 x11()
