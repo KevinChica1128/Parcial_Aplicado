@@ -1,0 +1,297 @@
+% -------------------------------------------------------------------------------------
+% Plantilla de un artículo para publicar en la Revista Colombiana de Estadística
+% *************************************************************************************
+% -------------------------------------------------------------------------------------
+% Establecer primero el idioma principal del artículo, por defecto es español; para
+% utilizar otro idioma, cambiar el comando "\documentclass{revcoles}" por el comando
+% "\documentclass[english]{revcoles}" o por "\documentclass[portuguese]{revcoles}"
+% **** --------------------------------------------------------------------------------
+\documentclass[report,oneside]{revcoles}
+\usepackage[top=1.5cm,bottom=1cm]{geometry}
+\labeldocument[
+university = Universidad del Valle,
+faculty = Facultad de Ingeniería,
+department = Escuela de Estadística,
+program = Programa Académico de Estadística,
+subject = Análisis Multivariado,
+city = Cali,
+month = 4,
+year = 2019]
+
+% -------------------------------------------------------------------------------------
+% Espacio reservado para la carga de los paquetes por parte del autor
+% **** --------------------------------------------------------------------------------
+ \usepackage [latin1]{inputenc}
+
+
+
+% //// --------------------------------------------------------------------------------
+% -------------------------------------------------------------------------------------
+% Espacio reservado para colocar las definiciones especiales por parte del autor
+% **** --------------------------------------------------------------------------------
+
+
+
+% //// --------------------------------------------------------------------------------
+% -------------------------------------------------------------------------------------
+% Espacio utilizado para colocar las palabras que necesitan partición silábica
+% **** --------------------------------------------------------------------------------
+\hyphenation{Colombia mul-ti-va-ria-do pro-ba-bi-li-dad es-ta-dís-ti-ca}
+% //// --------------------------------------------------------------------------------
+\begin{document}
+
+% -------------------------------------------------------------------------------------
+% Espacio reservado para ingresar el título del artículo
+% "maintitle = " título original del artículo
+% "secondtitle = " título del artículo traducido al idioma alterno
+% "shorttitle = " título corto (opcional) para el encabezado
+% **** --------------------------------------------------------------------------------
+\title[maintitle = {Análisis de Correspondencias Múltiples (Parcial Aplicado)},
+       %secondtitle = Template for report in a course,
+       shorttitle = Parcial Aplicado ACM
+]
+% //// --------------------------------------------------------------------------------
+% -------------------------------------------------------------------------------------
+% Espacio reservado para ingresar el(los) autor(es) del artículo de forma individual.
+% opción "firstname = " nombres completos de cada autor
+% opción "surname = " primer apellido de cada autor
+% opción "numberinstitution = " número que identifica la institución a la que pertenece
+%         el autor, en caso de haber solo una institución el campo se elimina
+% opción "affiliation = " afiliación o cargo que desempeña el autor en la institución
+% opción "email = " dirección electrónica del autor (preferiblemente institucional)
+% **** --------------------------------------------------------------------------------
+\begin{authors}
+\author[firstname = Kevin Steven,
+        surname = García,
+        code = Código: 1533173,
+        email = kevin.chica@correounivalle.edu.co,
+]
+\author[firstname = Alejandro,
+        surname = Vargas,
+        code = Código: 1525953 ,
+        email = jose.alejandro.vargas@correounivalle.edu.co
+]
+
+\end{authors}
+% //// --------------------------------------------------------------------------------
+% -------------------------------------------------------------------------------------
+% Espacio reservado para ingresar la información de la(s) institución(es) a la(s)
+% cual(es) pertenece(n) el(los) autor(es)
+% Usar un comando "\institute"  por cada una de las diferentes instituciones.
+% Los campos "subdivision" y "division" son opcionales
+% Los campos "institution", "city" y "country" son obligatorios
+% **** --------------------------------------------------------------------------------
+\begin{comment}
+\begin{institutions}
+     \institute[subdivision = Departamento de Estadística,
+                division = Facultad de Ciencias,
+                institution = Universidad del Valle,
+                city = Cali,
+                country = Colombia]
+\end{institutions}
+\end{comment}
+% //// --------------------------------------------------------------------------------
+% -------------------------------------------------------------------------------------
+% CUERPO DEL DOCUMENTO
+% **** --------------------------------------------------------------------------------
+% -------------------------------------------------------------------------------------
+% Espacio reservado para colocar el resumen en el idioma principal y las palabras clave
+% !!No dejar salto de línea entre el resumen y el comando \keywords{.}¡¡
+% **** --------------------------------------------------------------------------------
+\begin{comment}
+\begin{mainabstract}
+Este documento contiene las instrucciones de presentación de los
+trabajos de cursos. Este texto está escrito utilizando \LaTeX\
+como editor según formato adjunto (archivo \emph{Template for Report.tex})
+y puede utilizarse como guía, reemplazando este contenido. Se requieren los
+archivos \emph{revcoles.cls}, \emph{references.bib} y \emph{graph\_example.eps}.%
+%
+\keywords{Formato en \LaTeX\ para documentos, carrera de Estadística}
+\end{mainabstract}
+\end{comment}
+% //// --------------------------------------------------------------------------------
+% -------------------------------------------------------------------------------------
+% Espacio reservado para colocar el resumen en el idioma secundario y las palabras clave
+% !!No dejar salto de línea entre el resumen y el comando \keywords{.}¡¡
+% **** --------------------------------------------------------------------------------
+\begin{comment}
+\begin{secondaryabstract}
+This document gives the instructions to prepare a \LaTeX\ version of the graduation project of undergraduate in
+Statistics to first semester of 2008. The document is written using a \LaTeX\ format (file \emph{Plantilla para trabajo
+de grado.tex}) and can be used as a guideline just replacing its contents. It is necessary to use also the files
+\emph{revcoles.cls}, \emph{references.bib} and \emph{graph\_example.eps}.
+%
+\keywords{\LaTeX\ format for documents, undergraduate in Statistics}
+\end{secondaryabstract}
+
+\end{comment}% //// --------------------------------------------------------------------------------
+% -------------------------------------------------------------------------------------
+% Título de la primera sección
+% **** --------------------------------------------------------------------------------
+\section{Introducción}
+Para esta práctica decidimos trabajar sobre la base de datos correspondiente a la ``Encuesta Nacional de Uso del Tiempo''  (ENUT: 2016 - 2017). Al ser una encuesta tan extensa decidimos tomar solo los datos correspondientes al ``CAPITULO B: CONDICIONES DE LA VIVIENDA'', el cual cuenta con más de 44 mil datos de hogares y 14 variables cualitativas o categóricas.
+~\\Luego de observar las posibles variables que podíamos utilizar para realizar el análisis de correspondencias múltiples, nos quedamos con 9 variables, de las cuales 8 corresponden a preguntas sobre las condiciones de vivienda y una es la variable ``REGIÓN'' correspondiente a las 6 regiones de Colombia en las cuales se realizó el estudio.
+
+~\\Las variables son las siguientes:
+\begin{itemize}
+\item[P424:]Tipo de vivienda(1.Casa,2.Apartamento,3.Cuarto,4.Vivienda indígena,5.Otra)
+\item[P4030S1:]Cuenta la vivienda con energía eléctrica? (1.Si , 2.No)
+\item[P4030S1A1:]Estrato socio económico(Bajo - Bajo /1, Bajo /2, Medio - Bajo /3, Medio /4, Medio - Alto /5, Alto /6)
+\item[P4030S5:]Cuenta la vivienda con Acueducto? (1.Si , 2.No)
+\item[P4030S3:]Cuenta la vivienda con Alcantarillado? (1.Si , 2.No)
+\item[P4030S4:]Cuenta la vivienda con recoleccion de basuras? (1.Si , 2.No)
+\item[P4030S4A1:]Cuántos días de la semana se recolecta basura?(1,2,3,4,5,6,7,8)
+\item[P4030S2:]Cuenta la vivienda con Gas natural? (1.Si,2.No)
+\item[REGION:]Región de la encuesta (6.San Andrés , 5.Bogotá , 4.Pacífica , 3.Oriental , 2.Central , 1.Atlántica)
+\end{itemize}
+
+\section{Punto 1. ¿Cuántos ejes se generan en el ACM?}
+~\\Se generaron en total 27 ejes, en la siguiente gráfica podemos observar los 27 ejes y su respectiva varianza explicada.
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale=0.37]{FigurasUV/Inercia.pdf}
+\end{figure}
+
+\section{Punto 2. ¿Qué relación existe entre la Inercia Total, el número de modalidades y el número de variables cualitativas?}
+La relación que existe es que el número de ejes que resultan en un ACM es igual al número de modalidades menos el número de variables, en nuestro caso contamos con un total de 36 modalidades y 9 variables o preguntas por lo que tenemos un total de 27 ($36-9$) ejes, cada eje explica un porcentaje de la inercia y el total de inercia es igual a la suma de la inercia por modalidades o por variables(preguntas):
+$$I=\sum_{q=1}^{s}{I_q}=\sum_{j=1}^{p}{I_j};\;\;Donde:\;\;I_q=Inercia\;\; por\;\; pregunta\;\;y\;\;I_j=Inercia\;\;por\;\;modalidad$$
+
+\section{Punto 3. ¿Qué similitudes existen entre las filas?}
+Las filas están dadas por los hogares encuestados, en nuestro caso dos hogares son similares o se parecen si ambos han seleccionado las mismas modalidades, por ende pasamos a evaluar que similitudes hay entre los hogares:
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale=0.38]{FigurasUV/indyvar.pdf}
+\end{figure}
+~\\En principio las gráficas se ven algo cargadas ya que estamos trabajando con más de 38 mil hogares o individuos y 36 modalidades, sin embargo podemos ver que varios hogares comparten similitudes entre sus modalidades. En el gráfico se puede apreciar que se forman 3 grupos, la gran mayoría de hogares se ven reunidos en el grupo más grande, el cual es el que está más cerca del centro, en este se encuentran los hogares que tuvieron respuestas afirmativas a varias preguntas sobre si se cuenta con servicios públicos y que corresponden a las regiones más grandes que son 1.Atlántico y 3.Oriental, dado lo anterior, podemos decir que la gran mayoría de hogares encuestados tiene todos los servicios públicos y de los cuales una gran parte pertenece a las regiones de Atlántico y Oriental. Observamos que los individuos mas alejados están relacionados con la región 6 que es San Andrés, esta región al ser una isla es la que tiene menos hogares, al igual que los estratos por encima del 3, resultan ser los menos frecuentes.
+
+\section{Punto 4. Con base a la nube de individuos ¿Cuáles son los valores excéntricos? }
+Evaluamos el gráfico de la nube de individuos para conocer los valores que se alejan del centro.
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale=0.43]{FigurasUV/ind.pdf}
+\end{figure}
+~\\Según vemos en el gráfico y pudimos apreciar en el punto anterior los valores excéntricos son los que están mas relacionados con las modalidades ``no'' de las preguntas sobre si se cuenta con servicios públicos, podemos observar hogares como 102988, 1041524,1038213,1019294,1039511,... entre muchos otros, que además de no contar con varios servicios están mas asociados a la región de San Andrés que es la que menos habitantes tiene.
+
+
+\section{Punto 5. Con base a la nube de variables ¿Cuáles son las modalidades más asociadas?}
+Evaluamos el gráfico de la nube de variables para conocer que modalidades están más cerca entre sí.
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale=0.44]{FigurasUV/modad4.pdf}
+\end{figure}
+Como se logra apreciar, el formato del gráfico cambió, esto se debe a que fue realizado con el paquete $ade4$ y los anteriores fueron realizados con el paquete "FactoMineR", aun así las interpretaciones son las mismas, sin embargo $ade4$ resulta ser mas amigable en algunos gráficos a la hora de interpretar.
+~\\En el gráfico siguiente, correspondiente a la nube de las variables, podemos observar que las personas con hogares tipo casa, apartamento y cuarto suelen tener la mayoría de servicios públicos, también los hogares que cuentan con todos sus servicios, o sea los que marcaron ``si'' en estas preguntas suelen estar cerca de las modalidades referentes a la pregunta estrato que tienen valores del 2 al 6, por lo que gran parte de las personas encuestadas a priori se puede decir que cuentan con varios de los servicios públicos. Algo curioso a tener en cuenta es que la región Pacifica esta muy relacionada con cuartos, por lo que se puede decir que las personas en el pacifico suelen vivir en cuartos con sus familias y dado esto, se podría hablar de una posible sobre población y pobreza en esa región.
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale=0.44]{FigurasUV/Diferenciasmod.pdf}
+\end{figure}
+~\\El gráfico anterior nos muestra las modalidades que tienen diferencias significativas, lo primero que notamos es que la región 6(San Andrés) es la más alejada del resto de las regiones, las regiones 1(Atlántica),2(Central) y 3(Oriental) son las más parecidas. Vemos que la mayoría de hogares cuenta con acueducto, alcantarillado y todos cuentan con recolección de basuras y energía eléctrica.
+
+\section{Punto 6. Realice una interpretación de las contribuciones absolutas y cosenos cuadrados para las modalidades y variables. ¿Los valores excéntricos tienen contribuciones altas?}
+El siguiente gráfico nos muestra cada pregunta como se ve representada en cada uno de los ejes, podemos ver que la mayoría de preguntas se ven mejor representada en el eje 1, por otra parte la región se ve muy bien representada en los primeros 4 ejes, el eje 3 muestra mejor el tipo de hogar.
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale=0.44]{FigurasUV/corr1.pdf}
+\end{figure}
+~\\Ya que tenemos 36 modalidades y mas de 38 mil datos, revisar cada uno de los valores se vuelve tedioso y complicado, por ende para el análisis por modalidades se optó por realizar un gráfico de barras de los cosenos cuadrados y las contribuciones en los dos primeros ejes.
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale=0.45]{FigurasUV/contycose.pdf}
+\end{figure}
+~\\Este dio como resultado para los dos primeros ejes que las modalidades que más contribuyen a la formación del eje 1 son  la respuestas negativas a si se cuenta con servicio de acueducto y alcantarillado, mientras que  para el eje dos las regiones 5 ,6 y 2 contribuyen a su formación.
+~\\Por la parte de los cosenos, cuyos gráficos están en la segunda fila, podemos ver que las modalidades que mejor se ven representadas son las referentes a la pregunta sobre si se cuenta con acueducto y si se cuenta con alcantarillado, para el eje dos las modalidades que se ven mejor representadas son en las que se recolecta basura los días 1 y 3 de la semana así como varias de las regiones.
+
+~\\En el caso de los individuos es muy difícil lograr visualizar estas contribuciones y cosenos por la magnitud de  los datos, sin embargo podemos ver que tanto contribuyen y se ven representados los hogares que tuvieron valores  excéntricos. 
+
+~\\Teníamos que algunos valores excéntricos son: (1041524,1038213,1019294,1039511), de los cuales en el eje 1 todas dieron contribuciones inferiores a 1, por lo que estos individuos excéntricos no contribuyen a su formación, para el eje 2 son aun más bajas. Los cosenos cuadrados para los 3 primeros hogares en el eje 1 rondan valores entre 0.30 y 0.45, se puede decir que se ven bien representados, por otra parte el tercer hogar tiene un valor de aproximadamente 0.08 el cual es bastante bajo.
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline 
+  CONTRIBUCIONES& &&\\
+\hline 
+  Hogar& Dim 1 & Dim 2 & Dim 3 \\ 
+\hline 
+1041524 &0.9665660& 0.5168859& 0.4833209 \\
+1038213&0.90955947& 0.40907346 &0.49802097\\
+1019294&0.97264253& 0.29979671 &0.10706549\\
+1039511&0.96740190 &0.04157307 &0.14073777 \\
+\hline 
+\end{tabular} 
+\end{center}
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline 
+  COSENOS& &&\\
+\hline 
+  Hogar& Dim 1 & Dim 2 & Dim 3 \\ 
+\hline 
+1041524 &0.33623659& 0.10779526& 0.09316037\\
+1038213&0.317828028& 0.085694690& 0.096425279\\
+1019294&0.426899316& 0.078884300& 0.026037776\\
+1039511&0.071953936& 0.001853750 &0.005800167 \\
+\hline 
+\end{tabular} 
+\end{center}
+~\\La conclusión principal que se obtiene es que los valores excéntricos no contribuyen de gran forma a la formación de los ejes, ya que estos presentan frecuencias bajas en la matriz F.
+
+\pagebreak
+\section{Punto 7. Utilizar variables suplementarias o individuos suplementarios si se requiere}
+El ACM se realizó teniendo en cuenta todas la variables e individuos sin embargo se podría haber tomado varias preguntas como suplementarias, ente este punto veremos como se comporta el ACM si tomamos la pregunta Región y la Pregunta referente al día en que se recolecta la basura como variables suplementaria.
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale=0.4]{FigurasUV/supl9.pdf}
+\end{figure}
+~\\Tomando la región como variable suplementaria vemos una menor dispersión en el gráfico, por lo que se puede decir que las modalidades de esta variable hacían que varios hogares se diferenciaran de otros, lo cual es lógico ya que dependiendo de la región también se tenían diferentes cantidades de hogares. El ACM se pudo haber trabajado de esta manera y se hubieran tal vez obtenido conclusiones mas generales como que la gran mayoría del país cuenta con varios de los servicios públicos.
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale=0.4]{FigurasUV/supl7.pdf}
+\end{figure}
+\\Esta pregunta referente al día que se recolectan las basuras, quisimos verla como variable suplementaria ya que es algo conflictiva, tiene muchas modalidades y la interpretación de cada una es algo confusa, ademas de que no aporta mucho al análisis, sin embargo decidimos incluirla en el ACM ya que el trabajo es con fines académicos. 
+\\Vemos que de haberla tomado como variable suplementaria o de no haberla incluido los datos logran verse mas agrupados en el centro, sin embargo la región sigue llevándose gran parte de los hogares, en especial la región 6.
+
+\section{Punto 8. Acompañar los resultados con el clúster mixto}
+Se opta por la utilización de un clúster mixto ya que se están trabajando con variables categóricas, ademas de que se tiene un volumen de datos relativamente grande.
+\\Primero miramos cuantos posibles clúster realizar, o cuantos grupos se pueden formar:
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale=0.38]{FigurasUV/numclus.pdf}
+\end{figure}
+\\Observando la gráfica anterior y también como se distribuyen los puntos en la nube de individuos podemos decir que se conforman 3 grupos, así pues pasamos a realizar el clúster.
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale=0.45]{FigurasUV/plotclus.pdf}
+\end{figure}
+~\\El gráfico nos muestra como se conforman los 3 grupos, donde los grupos de color verde y rojo recogen los hogares con mas frecuencia y el otro recogería los hogares faltantes que tienen menos frecuencia.
+~\\Podemos relacionar los grupos con ciertas variable,el grupo verde y rojo tienen hogares con varios de los servicios públicos, pero el grupo rojo tiene hogares con estratos bajos, mientras que el verde tiende mas a l clase media-alta,el grupo 3 o rosa tiene mayor cantidad de hogares en la región de San Andrés, y esta mas relacionado con modalidades poco frecuentes.
+
+\section{Conclusiones}
+Para concluir podemos decir que la mayoría de los hogares en Colombia cuentan con todos los servicios públicos, además que los estratos 2 y 3 aunque son clase ``media - baja'' curiosamente cuentan con la mayoría de los servicios públicos.
+\\Podemos también decir que la mayoría de hogares en la región Pacifica son cuartos y que todos los hogares encuestados en todo el país cuentan con servicios de recolección de basuras y acueducto.
+\\Aunque se decidiera incluir la variable referente a la pregunta sobre el día en que se recolecta la basura esta demostró no ser de mucho aporte en el análisis por lo que podría eliminarse.
+
+
+
+
+
+% //// --------------------------------------------------------------------------------
+% -------------------------------------------------------------------------------------
+% Fin del cuerpo del documento
+% **** --------------------------------------------------------------------------------
+% **** --------------------------------------------------------------------------------
+% Espacio para colocar el nombre del archivo *.bib (sin la extensión .bib) que contiene
+% las referencias bibliográficas del artículo utilizando el estilo bibliográfico BibTeX
+% "\referencias{.}"
+% **** --------------------------------------------------------------------------------
+
+% //// --------------------------------------------------------------------------------
+% //// --------------------------------------------------------------------------------
+    \appendix% !no modificar esta línea¡
+% -------------------------------------------------------------------------------------
+% Espacio para ubicar los apéndices: tablas y gráficas
+% **** --------------------------------------------------------------------------------
+
+
+% -------------------------------------------------------------------------------------
+% Fin del artículo
+% **** --------------------------------------------------------------------------------
+\end{document}
