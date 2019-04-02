@@ -139,7 +139,7 @@ Para esta práctica decidimos trabajar sobre la base de datos correspondiente a l
 \item[P4030S1A1:]Estrato socio económico(Bajo - Bajo /1, Bajo /2, Medio - Bajo /3, Medio /4, Medio - Alto /5, Alto /6)
 \item[P4030S5:]Cuenta la vivienda con Acueducto? (1.Si , 2.No)
 \item[P4030S3:]Cuenta la vivienda con Alcantarillado? (1.Si , 2.No)
-\item[P4030S4:]Cuenta la vivienda con recoleccion de basuras? (1.Si , 2.No)
+\item[P4030S4:]Cuenta la vivienda con recolección de basuras? (1.Si , 2.No)
 \item[P4030S4A1:]Cuántos días de la semana se recolecta basura?(1,2,3,4,5,6,7,8)
 \item[P4030S2:]Cuenta la vivienda con Gas natural? (1.Si,2.No)
 \item[REGION:]Región de la encuesta (6.San Andrés , 5.Bogotá , 4.Pacífica , 3.Oriental , 2.Central , 1.Atlántica)
@@ -266,8 +266,12 @@ Se opta por la utilización de un clúster mixto ya que se están trabajando con va
 
 \section{Conclusiones}
 Para concluir podemos decir que la mayoría de los hogares en Colombia cuentan con todos los servicios públicos, además que los estratos 2 y 3 aunque son clase ``media - baja'' curiosamente cuentan con la mayoría de los servicios públicos.
-\\Podemos también decir que la mayoría de hogares en la región Pacifica son cuartos y que todos los hogares encuestados en todo el país cuentan con servicios de recolección de basuras y acueducto.
-\\Aunque se decidiera incluir la variable referente a la pregunta sobre el día en que se recolecta la basura esta demostró no ser de mucho aporte en el análisis por lo que podría eliminarse.
+\\Podemos también decir que la mayoría de hogares en la región Pacifica son cuartos, lo cual como se mencionó anteriormente, es un fuerte indicio de aglomeración o pobreza en esa región. También se notó que todos los hogares encuestados en todo el país cuentan con servicios de recolección de basuras y acueducto.
+\\Con respecto a las variables suplementarias; se vio que aunque se decidiera incluir la variable referente a la pregunta sobre el día en que se recolecta la basura esta demostró no ser de mucho aporte en el análisis por lo que podría eliminarse del análisis.
+
+~\\Para complementar las conclusiones decidimos realizar adicionalmente un análisis descriptivo de la base de datos, se obtuvo que, con respecto a la primera variable P424 la cual corresponde al tipo de vivienda, el 97.96\% de los hogares viven en casa o apartamento, el porcentaje restante (2.04\%) se divide entre cuarto, vivienda indígena y otra. Con respecto a las variables P4030S1, P4030S5, P4030S3, P4030S4 y P4030S2 se obtuvo respectivamente, que el 98.89\% de las viviendas cuentan con energía eléctrica, el 89.53\% de las viviendas cuentan con acueducto, el 79.34\% de las viviendas cuentan con alcantarillado, el 87.28\% de las viviendas cuentan con recolección de basuras y el 71.52\% de las viviendas cuentan con gas natural. Adicionalmente, con respecto a la variable P4030S1A1 que corresponde al estrato socio económico, se obtuvo un resultado preocupante y es que el 71.83\% de las viviendas son de estrato bajo - bajo y de bajo, es decir, estratos 1 y 2, el resto del porcentaje (28.16\%) se distribuyó en los 4 estratos restantes de manera decreciente, siendo el estrato 3 (medio - bajo) el que mayor porcentaje presenta.
+
+~\\Aquí se pudo evidenciar una de las ventajas fuertes del análisis multivariado en general y del análisis de correspondencias múltiples específicamente, ya que en las estadísticas descriptivas dadas anteriormente no se pueden establecer relaciones entre las variables, es decir, no se puede decir por ejemplo, a que región pertenecen mayormente las viviendas de estratos bajos, o en que regiones la mayoría de las viviendas no cuentan con algún servicio público, entre otras relaciones. Por lo que el análisis multivariado saca una gran ventaja en este aspecto, permitiendo no solo obtener conclusiones generales como con las descriptivas, si no también permitiendo encontrar posibles relaciones causales entre las variables de estudio.
 
 \pagebreak
 \appendix 

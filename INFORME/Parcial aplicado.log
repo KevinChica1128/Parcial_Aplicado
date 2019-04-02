@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6960 64-bit) (preloaded format=pdflatex 2019.2.2)  1 APR 2019 18:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6960 64-bit) (preloaded format=pdflatex 2019.2.2)  1 APR 2019 22:15
 entering extended mode
 **"./Parcial aplicado.tex"
 ("Parcial aplicado.tex"
@@ -567,61 +567,61 @@ Overfull \hbox (57.81337pt too wide) in paragraph at lines 262--263
 <FigurasUV/Base.png, id=102, 1371.1225pt x 770.88pt>
 File: FigurasUV/Base.png Graphic file (type png)
 <use FigurasUV/Base.png>
-Package pdftex.def Info: FigurasUV/Base.png  used on input line 277.
+Package pdftex.def Info: FigurasUV/Base.png  used on input line 281.
 (pdftex.def)             Requested size: 479.90007pt x 269.81204pt.
 
-Overfull \hbox (49.89545pt too wide) in paragraph at lines 277--278
+Overfull \hbox (49.89545pt too wide) in paragraph at lines 281--282
  [][] 
  []
 
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 281.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 285.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/base\t1cmtt.fd"
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-Overfull \hbox (42.38002pt too wide) in paragraph at lines 285--285
+Overfull \hbox (42.38002pt too wide) in paragraph at lines 289--289
 []\T1/cmtt/m/n/10 datos=read.table (file = "clipboard", header = TRUE, row.name
 s = 1, sep = "\t", dec = ".")[] 
  []
 
 [10 <./FigurasUV/Base.png>]
-Overfull \hbox (126.35951pt too wide) in paragraph at lines 350--350
+Overfull \hbox (126.35951pt too wide) in paragraph at lines 354--354
 []\T1/cmtt/m/n/10 for (i in 1:4) barplot(mod.mca$cr[, i], names.arg = row.names
 (mod.mca$cr), las = 2, main = paste("Axe",i))[] 
  []
 
 [11]
-Overfull \hbox (189.34413pt too wide) in paragraph at lines 376--376
+Overfull \hbox (189.34413pt too wide) in paragraph at lines 380--380
 []\T1/cmtt/m/n/10 for (i in 1:2) barplot(acm2$var$contrib[, i], names.arg = row
 .names(acm2$var$contrib), las = 2, main = paste("Dim",i))[] 
  []
 
 
-Overfull \hbox (252.32875pt too wide) in paragraph at lines 377--377
+Overfull \hbox (252.32875pt too wide) in paragraph at lines 381--381
 []\T1/cmtt/m/n/10 for (i in 1:2) barplot(na.omit(acm2$var$cos2)[, i], names.arg
  = row.names(na.omit(acm2$var$cos2)), las = 2, main = paste("Dim",i))[] 
  []
 
 
-Overfull \hbox (252.32875pt too wide) in paragraph at lines 382--382
+Overfull \hbox (252.32875pt too wide) in paragraph at lines 386--386
 []\T1/cmtt/m/n/10 for (i in 1:2) barplot(na.omit(acm2$var$cos2)[, i], names.arg
  = row.names(na.omit(acm2$var$cos2)), las = 2, main = paste("Dim",i))[] 
  []
 
 
-Overfull \hbox (189.34413pt too wide) in paragraph at lines 390--390
+Overfull \hbox (189.34413pt too wide) in paragraph at lines 394--394
 []\T1/cmtt/m/n/10 for (i in 1:2) barplot(acm2$ind$contrib[, i], names.arg = row
 .names(acm2$ind$contrib), las = 2, main = paste("Dim",i))[] 
  []
 
 
-Overfull \hbox (252.32875pt too wide) in paragraph at lines 391--391
+Overfull \hbox (252.32875pt too wide) in paragraph at lines 395--395
 []\T1/cmtt/m/n/10 for (i in 1:2) barplot(na.omit(acm2$ind$cos2)[, i], names.arg
  = row.names(na.omit(acm2$ind$cos2)), las = 2, main = paste("Dim",i))[] 
  []
 
 [12]
-Overfull \hbox (16.13643pt too wide) in paragraph at lines 450--450
+Overfull \hbox (16.13643pt too wide) in paragraph at lines 454--454
 []\T1/cmtt/m/n/10 plotFactoClass(cluster1,cframe=1,col.row=c("red","green","mar
 oon2","orchid4","pink"))[] 
  []
@@ -637,7 +637,7 @@ Here is how much of TeX's memory you used:
  9727 multiletter control sequences out of 15000+200000
  19213 words of font info for 58 fonts, out of 3000000 for 9000
  1145 hyphenation exceptions out of 8191
- 43i,8n,40p,1073b,359s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 43i,8n,40p,1187b,359s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\KEVINSTEVEN\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/
 dpi600\ectt1000.pk> <C:\Users\KEVINSTEVEN\AppData\Local\MiKTeX\2.9\fonts/pk/ljf
 our/jknappen/ec/dpi600\ecti0900.pk> <C:\Users\KEVINSTEVEN\AppData\Local\MiKTeX\
@@ -656,9 +656,9 @@ KEVINSTEVEN\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx090
 KTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/
 fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
 1/public/amsfonts/cm/cmsy10.pfb>
-Output written on "Parcial aplicado.pdf" (13 pages, 1984141 bytes).
+Output written on "Parcial aplicado.pdf" (13 pages, 1986413 bytes).
 PDF statistics:
- 489 PDF objects out of 1000 (max. 8388607)
+ 491 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  61 words of extra memory for PDF output out of 10000 (max. 10000000)
 
